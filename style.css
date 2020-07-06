@@ -1,0 +1,272 @@
+body {
+    position: absolute;
+    width: 1440px;
+    height: 1080px;
+    left: 0;
+    top: 0;
+    background: #181719;
+}
+
+.topnav {
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.topnav .logo {
+    width: 86px;
+    height: 16px;
+    left: 85px;
+    top: 50px;
+    font-family: Crimson Pro;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.topnav a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    /* line-height: 20px; */
+    color: #FFFFFF;
+    text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.topnav .icon {
+    display: none;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container img {
+    width: 40rem;
+}
+
+.flex-container h1 {
+    /* position: absolute; */
+    width: 380px;
+    height: 61px;
+    left: 77px;
+    top: 245px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.flex-container p {
+    /* position: absolute; */
+    width: 410px;
+    height: 145px;
+    left: 77px;
+    top: 347px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+a {
+    width: 102px;
+    height: 22px;
+    left: 77px;
+    top: 540px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.container {
+    position: absolute;
+    width: 410px;
+    height: 189px;
+    left: 900px;
+    top: 500px;
+    background: #181719;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.container-flex img {
+    /* position: absolute; */
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+}
+
+.container-flex h1 {
+    width: 95px;
+    height: 17px;
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+}
+
+.container-flex h2 {
+    width: 102px;
+    height: 15px;
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+p {
+    width: 280px;
+    height: 62px;
+    margin-left: 30px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+h3 {
+    position: absolute;
+    width: 226px;
+    height: 17px;
+    left: 601px;
+    top: 650px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+
+hr {
+    display: none;
+}
+
+/* responsiveness */
+@media screen and (max-width: 600px) {
+    .flex-container {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .container {
+        width: 410px;
+        height: 189px;
+        left: 180px;
+        top: 780px;
+        background: #181719;
+    }
+    h3 {
+        top: 2400px;
+    }
+
+    hr {
+        display: block;
+        position: absolute;
+        width: 70%;
+left: 250px;
+top: 2300px;
+border: 1px solid #A9A9A9;
+    }
+
+    .topnav-right a {
+        display: none;
+    }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+      position: relative;
+    }
+  .topnav.responsive .icon {
+    /* position: absolute; */
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}

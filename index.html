@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior consultant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav"> 
+        <a class="logo" href="#">THIS INTERIOR</a>
+        <div class="topnav-right">
+            <a href="#">Home</a>
+            <a href="#">Collection</a>
+             <a href="#">About</a>
+             <a href="#">Contact</a>
+             <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+      </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">Collection</a>
+             <a href="#">About</a>
+             <a href="#">Contact</a>
+        </div>
+      </div>
+      
+
+    <div class="flex-container">
+        <div>
+            <h1>Mordern interior</h1>
+            <p>A full-Service residential & commercial interior design and staging company
+                offering professional organizing & eco-services.
+            </p>
+            <a href="#"> Read more<i class="material-icons">arrow</i></a>
+        </div>
+        <div>
+            <img src="photo1.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-flex">
+            <div>
+                <img src="photo2.png" alt="">
+            </div>
+            <div>
+                <h1>Aliza Webber</h1>
+                <h2>Interior designer</h2>
+            </div>
+        </div>
+        <p>Designed in 2020 by Aliza Webber</p>
+    </div>
+
+    <hr>
+    <h3>Haneefah @ DevChallenges.io</h3>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+        }
+        </script>
+</body>
+</html>
